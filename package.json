@@ -1,0 +1,55 @@
+{
+  "private": false,
+  "name": "get-url.js",
+  "version": "1.0.0",
+  "description": "...",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samline/get-url.js.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "html",
+    "html-css",
+    "html-css-javascript",
+    "html5",
+    "es6",
+    "protocol",
+    "path",
+    "url",
+    "div",
+    "address"
+  ],
+  "author": "Samuel Olvera (samline)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samline/get-url.js/issues"
+  },
+  "homepage": "https://github.com/samline/get-url.js#readme",
+  "scripts": {
+    "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "yarn run local",
+    "prod": "yarn run production",
+    "watch": "yarn run local -- --watch"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "laravel-mix": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6",
+    "yarn": ">=1.19.0"
+  },
+  "browserslist": [
+    "ie 9",
+    "last 2 versions"
+  ],
+  "main": "webpack.mix.js",
+  "dependencies": {}
+}
+
